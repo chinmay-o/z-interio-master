@@ -1,4 +1,9 @@
 
+.custom-portfolio-img img {
+
+  height: 340px;
+  object-fit: cover;
+}
 
 .logo-custom img {
 

@@ -79,3 +79,9 @@ $("#beginNowTwo").click(function() {
       }, 1000);
     $(".sidebar-menu, .overlay").removeClass("active");
 });
+
+// $(".details-btn").click(function(e) {
+//
+//     var title = $(e.target).parent().parent().attr('class');
+//     console.log($(title + ".product-name").innerHTML);
+// });
