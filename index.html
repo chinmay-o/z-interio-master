@@ -326,7 +326,6 @@
 				<!-- about-section - end
 				================================================== -->
 
-
 			</section>
 			<!-- Our Services - End -->
 
@@ -904,30 +903,34 @@
 						</div>
 					</div>
 
-					<form id="contact_form" action="https://getform.io/f/8d4b2855-6559-40c4-bfb3-fcfa1d66ce80" method="POST">
+					<form id="contact_form_enquiry">
 						<div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
 							<div class="col-lg-4">
 								<div class="form-item">
-									<input type="text" name="name" placeholder="Full Name">
+									<input type="text" name="name" placeholder="Full Name" required>
 								</div>
 							</div>
 
 							<div class="col-lg-4">
 								<div class="form-item">
-									<input type="email" name="email" placeholder="Email Address">
+									<input type="text" name="message" placeholder="Mobile Number" required>
 								</div>
 							</div>
 
 							<div class="col-lg-4">
 								<div class="form-item">
-									<input type="text" name="message" placeholder="Mobile Number">
+									<input type="email" name="subject" placeholder="Subject">
 								</div>
 							</div>
 
 						</div>
+
+						<h6 id="submitted-message" class="text-center"></h6>
+
 						<div class="text-center" data-aos="fade-up" data-aos-delay="500">
 							<button type="submit" class="btn" value="submit">Get a call back</button>
 						</div>
+
 					</form>
 
 				</div>
