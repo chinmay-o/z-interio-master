@@ -80,8 +80,15 @@ $("#beginNowTwo").click(function() {
     $(".sidebar-menu, .overlay").removeClass("active");
 });
 
-// $(".details-btn").click(function(e) {
-//
-//     var title = $(e.target).parent().parent().attr('class');
-//     console.log($(title + ".product-name").innerHTML);
-// });
+var targ;
+
+$(".details-btn").click(function(e) {
+
+    var parent = $(e.target).parent();
+    var productName = parent[0].innerText.split("\n")[0];
+
+    if (productName.length != 0) {
+
+      window.location.replace("https://api.whatsapp.com/send?phone=918590691476&text=Hi,%20I%20would%20like%20to%20know%20about%20"+ productName.split(" ").join("%20"));
+    }
+});
